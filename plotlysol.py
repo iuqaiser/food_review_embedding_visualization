@@ -110,7 +110,7 @@ plot.update_layout(
 
 df2 = visualisation_data[['Similarity', 'Summary', 'Text']]
 df2 = df2.sort_values(by = 'Similarity', ascending = False)
-df2
+#df2
 
 fig = go.Figure(data=[go.Table(
     header=dict(values=list(df2.columns),
@@ -124,5 +124,7 @@ fig = go.Figure(data=[go.Table(
 
 st.plotly_chart(plot, use_container_width=True)
 #st.plotly_chart(fig, use_container_width=True)
+
+df2
 
 
